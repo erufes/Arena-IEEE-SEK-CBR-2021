@@ -3,8 +3,8 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation -0.8672873817106859 -0.4777270481350051 -0.13996236996292202 0.6515425711256378
-  position -1.61365118560833 2.9059994602687693 5.571321866832776
+  orientation -0.8668277384331224 -0.4785822451241626 -0.13988819297865823 0.6504587489361587
+  position -1.78850208280744 3.2634071542827368 6.09895158112856
   followType "Mounted Shot"
 }
 TexturedBackground {
@@ -15,7 +15,7 @@ Solid {
   children [
     Solid {
       children [
-        Shape {
+        DEF SHAPE Shape {
           appearance PBRAppearance {
             baseColor 0.8 0.8 0.8
             baseColorMap ImageTexture {
@@ -50,6 +50,7 @@ Solid {
         }
       ]
       name "Cube_Arena"
+      boundingObject USE SHAPE
     }
   ]
   name "ArenaSEK.obj"
