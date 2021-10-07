@@ -3,8 +3,8 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation -0.8668277384331224 -0.4785822451241626 -0.13988819297865823 0.6504587489361587
-  position -1.78850208280744 3.2634071542827368 6.09895158112856
+  orientation -0.7029290399793313 -0.6884839074703984 -0.1785516001273232 0.7068985490393287
+  position -2.3857594559221122 2.41521315916198 5.62897421326206
   followType "Mounted Shot"
 }
 TexturedBackground {
@@ -54,4 +54,292 @@ Solid {
     }
   ]
   name "ArenaSEK.obj"
+}
+DEF CUBOS_BASES Group {
+  children [
+    DEF BASES_40cm Group {
+      children [
+        Solid {
+          translation 0.71 0 2.99
+          children [
+            DEF BASE_40cm Shape {
+              appearance Appearance {
+                material Material {
+                  diffuseColor 0.1 0.1 1
+                }
+              }
+              geometry Box {
+                size 0.08 0.05 0.4
+              }
+            }
+          ]
+          name "base_40cm_4"
+          boundingObject USE BASE_40cm
+        }
+        Solid {
+          translation 0.36 0 3.01
+          children [
+            DEF BASE_40cm Shape {
+              appearance Appearance {
+                material Material {
+                  diffuseColor 0.1 0.1 1
+                }
+              }
+              geometry Box {
+                size 0.08 0.05 0.4
+              }
+            }
+          ]
+          name "base_40cm_3"
+          boundingObject USE BASE_40cm
+        }
+        Solid {
+          translation 0.05 0 2.98
+          children [
+            DEF BASE_40cm Shape {
+              appearance Appearance {
+                material Material {
+                  diffuseColor 0.1 0.1 1
+                }
+              }
+              geometry Box {
+                size 0.08 0.05 0.4
+              }
+            }
+          ]
+          name "base_40cm_2"
+          boundingObject USE BASE_40cm
+        }
+        Solid {
+          translation -0.29 0 2.98
+          children [
+            DEF BASE_40cm Shape {
+              appearance Appearance {
+                material Material {
+                  diffuseColor 0.1 0.1 1
+                }
+              }
+              geometry Box {
+                size 0.08 0.05 0.4
+              }
+            }
+          ]
+          name "base_40cm_1"
+          boundingObject USE BASE_40cm
+        }
+      ]
+    }
+    DEF BASES_32cm Group {
+      children [
+        Solid {
+          translation 0.7 0 1.86
+          children [
+            DEF BASE_32cm Shape {
+              appearance Appearance {
+                material Material {
+                  diffuseColor 0.1 0.1 1
+                }
+              }
+              geometry Box {
+                size 0.08 0.05 0.32
+              }
+            }
+          ]
+          name "base_32cm_4"
+          boundingObject USE BASE_32cm
+        }
+        Solid {
+          translation 0.35 0 1.88
+          children [
+            DEF BASE_32cm Shape {
+              appearance Appearance {
+                material Material {
+                  diffuseColor 0.1 0.1 1
+                }
+              }
+              geometry Box {
+                size 0.08 0.05 0.32
+              }
+            }
+          ]
+          name "base_32cm_3"
+          boundingObject USE BASE_32cm
+        }
+        Solid {
+          translation 0.05 0 1.87
+          children [
+            DEF BASE_32cm Shape {
+              appearance Appearance {
+                material Material {
+                  diffuseColor 0.1 0.1 1
+                }
+              }
+              geometry Box {
+                size 0.08 0.05 0.32
+              }
+            }
+          ]
+          name "base_32cm_2"
+          boundingObject USE BASE_32cm
+        }
+        Solid {
+          translation -0.27 0 1.88
+          children [
+            DEF BASE_32cm Shape {
+              appearance Appearance {
+                material Material {
+                  diffuseColor 0.1 0.1 1
+                }
+              }
+              geometry Box {
+                size 0.08 0.05 0.32
+              }
+            }
+          ]
+          name "base_32cm_1"
+          boundingObject USE BASE_32cm
+        }
+      ]
+    }
+    DEF BASES_27cm Group {
+      children [
+        Solid {
+          translation -1.54 0 2.42
+          children [
+            DEF BASE_27cm Shape {
+              appearance Appearance {
+                material Material {
+                  diffuseColor 0.1 0.1 1
+                }
+              }
+              geometry Box {
+                size 0.08 0.05 0.28
+              }
+            }
+          ]
+          name "base_27cm_8"
+          boundingObject USE BASE_27cm
+        }
+        Solid {
+          translation -1.2 0 2.42
+          children [
+            DEF BASE_27cm Shape {
+              appearance Appearance {
+                material Material {
+                  diffuseColor 0.1 0.1 1
+                }
+              }
+              geometry Box {
+                size 0.08 0.05 0.28
+              }
+            }
+          ]
+          name "base_27cm_7"
+          boundingObject USE BASE_27cm
+        }
+        Solid {
+          translation -0.9 0 2.42
+          children [
+            DEF BASE_27cm Shape {
+              appearance Appearance {
+                material Material {
+                  diffuseColor 0.1 0.1 1
+                }
+              }
+              geometry Box {
+                size 0.08 0.05 0.28
+              }
+            }
+          ]
+          name "base_27cm_6"
+          boundingObject USE BASE_27cm
+        }
+        Solid {
+          translation -0.59 0 2.42
+          children [
+            DEF BASE_27cm Shape {
+              appearance Appearance {
+                material Material {
+                  diffuseColor 0.1 0.1 1
+                }
+              }
+              geometry Box {
+                size 0.08 0.05 0.28
+              }
+            }
+          ]
+          name "base_27cm_5"
+          boundingObject USE BASE_27cm
+        }
+        Solid {
+          translation -0.28 0 2.42
+          children [
+            DEF BASE_27cm Shape {
+              appearance Appearance {
+                material Material {
+                  diffuseColor 0.1 0.1 1
+                }
+              }
+              geometry Box {
+                size 0.08 0.05 0.28
+              }
+            }
+          ]
+          name "base_27cm_4"
+          boundingObject USE BASE_27cm
+        }
+        Solid {
+          translation 0.05 0 2.42
+          children [
+            DEF BASE_27cm Shape {
+              appearance Appearance {
+                material Material {
+                  diffuseColor 0.1 0.1 1
+                }
+              }
+              geometry Box {
+                size 0.08 0.05 0.28
+              }
+            }
+          ]
+          name "base_27cm_3"
+          boundingObject USE BASE_27cm
+        }
+        Solid {
+          translation 0.35 0 2.41
+          children [
+            DEF BASE_27cm Shape {
+              appearance Appearance {
+                material Material {
+                  diffuseColor 0.1 0.1 1
+                }
+              }
+              geometry Box {
+                size 0.08 0.05 0.28
+              }
+            }
+          ]
+          name "base_27cm_2"
+          boundingObject USE BASE_27cm
+        }
+        Solid {
+          translation 0.7 0 2.42
+          children [
+            DEF BASE_27cm Shape {
+              appearance Appearance {
+                material Material {
+                  diffuseColor 0.1 0.1 1
+                }
+              }
+              geometry Box {
+                size 0.08 0.05 0.28
+              }
+            }
+          ]
+          name "base_27cm_1"
+          boundingObject USE BASE_27cm
+        }
+      ]
+    }
+  ]
 }
