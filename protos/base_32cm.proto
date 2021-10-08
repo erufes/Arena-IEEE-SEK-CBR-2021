@@ -1,0 +1,27 @@
+#VRML_OBJ R2021b utf8
+PROTO base_32cm [
+  field SFVec3f    translation  0 0 0
+  field SFRotation rotation     0 1 0 0
+  field SFString   name         "Base 32cm"
+]
+
+{
+  Solid {
+    translation IS translation
+    rotation IS rotation
+    children [
+      DEF BASE_32cm Shape {
+        appearance Appearance {
+          material Material {
+            diffuseColor 0.1 0.1 1
+          }
+        }
+        geometry Box {
+          size 0.08 0.05 0.32
+        }
+      }
+    ]
+    name IS name
+    boundingObject USE BASE_32cm
+  }
+}
