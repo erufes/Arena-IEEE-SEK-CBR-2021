@@ -1,8 +1,10 @@
 #VRML_OBJ R2021b utf8
+# template language: javascript
 PROTO cano_15cm [
   field SFVec3f    translation  0 0 0
   field SFRotation rotation     1 0 0 -1.5707953071795862
   field SFString   name         "Cano 15cm"
+  field SFBool     enablePhysics TRUE
 ]
 
 {
@@ -34,8 +36,11 @@ PROTO cano_15cm [
       }
     ]
     name IS name
-    boundingObject USE SHAPE
+    boundingObject USE SHAPE  
+    %< if (fields.enablePhysics.value) { >%
     physics Physics {
+    
     }
+    %< } >%
   }
 }
