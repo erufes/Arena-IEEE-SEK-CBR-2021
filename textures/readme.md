@@ -1,0 +1,2 @@
+# Textures
+Pasta de texturas.
