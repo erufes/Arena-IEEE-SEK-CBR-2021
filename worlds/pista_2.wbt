@@ -15,279 +15,279 @@ TexturedBackground {
 }
 TexturedBackgroundLight {
 }
-arena_sek_2021 {
-}
-DEF BASES Group {
+DEF Arena Group {
   children [
-    base_27cm {
-      translation 0.24 0.025 -0.095
-      name "Base 27cm(4)"
+    arena_sek_2021 {
     }
-    base_27cm {
-      translation -0.24 0.025 0.095
-      name "Base 27cm(1)"
-    }
-    base_32cm {
-      translation 0.24 0.025 -0.39
-    }
-    base_32cm {
-      translation -0.24 0.025 0.39
-      name "Base 32cm(2)"
-    }
-    base_32cm {
-      translation -0.24 0.025 0.71
-      name "Base 32cm(3)"
-    }
-    base_40cm {
-      translation -0.24 0.025 1.05
-      name "Base 40cm(1)"
-    }
-    base_32cm {
-      translation 0.24 0.025 -0.71
-      name "Base 32cm(1)"
-    }
-    base_40cm {
-      translation 0.24 0.025 -1.05
-      name "Base 40cm(2)"
-    }
-    base_40cm {
-      translation 0 0.025 0
-      rotation 0 1 0 -1.5707953071795862
-    }
-  ]
-}
-DEF CANOS_DIR Group {
-  children [
-    cano_10cm {
-      translation 2.09 0.16 -0.67
-      name "Cano 6"
-    }
-    cano_10cm {
-      translation 2.09 0.16 -1
-      name "Cano 5"
-    }
-    cano_15cm {
-      translation 2.09 0.16 -0.19
-      name "Cano 4"
-    }
-    cano_15cm {
-      translation 2.09 0.16 0.18
-      name "Cano 3"
-    }
-    cano_20cm {
-      translation 2.09 0.16 0.65
-      name "Cano 2"
-    }
-    cano_20cm {
-      translation 2.09 0.16 1.01
-      name "Cano 1"
-    }
-  ]
-}
-DEF CANOS_ESQ Group {
-  children [
-    cano_10cm {
-      translation -2.09 0.16 0.67
-      name "Cano 12"
-    }
-    cano_10cm {
-      translation -2.09 0.16 1
-      name "Cano 11"
-    }
-    cano_15cm {
-      translation -2.09 0.16 0.19
-      name "Cano 10"
-    }
-    cano_15cm {
-      translation -2.09 0.16 -0.18
-      name "Cano 9"
-    }
-    cano_20cm {
-      translation -2.09 0.16 -0.65
-      name "Cano 8"
-    }
-    cano_20cm {
-      translation -2.09 0.16 -1.01
-      name "Cano 7"
-    }
-  ]
-}
-DEF CANOS_CENTRO_DIR Group {
-  children [
-    cano_15cm {
-      translation 0.135 0.105 2.02586e-07
-      rotation 0.577349935856137 0.577349935856137 0.5773509358560258 -2.094395307179586
-      name "Cental 7"
-      enablePhysics FALSE
-    }
-    joelho {
-      translation 0.245 0.105 -0.0075
-      name "Joelho 1"
-      enablePhysics FALSE
-    }
-    cano_20cm {
-      translation 0.255 0.095 -0.14
-      name "Cental 6"
-      enablePhysics FALSE
-    }
-    cano_20cm {
-      translation 0.255 0.095 -0.34
-      name "Cental 5"
-      enablePhysics FALSE
-    }
-    cano_20cm {
-      translation 0.255 0.0950001 -0.54
-      name "Cental 4"
-      enablePhysics FALSE
-    }
-    cano_20cm {
-      translation 0.255 0.0950001 -0.91
-      name "Cental 3"
-      enablePhysics FALSE
-    }
-    cano_15cm {
-      translation 0.255 0.100001 -1.08
-      name "Central 2"
-      enablePhysics FALSE
-    }
-    cano_10cm {
-      translation 0.255 0.1 -1.205
-      rotation -0.9999999999999999 0 0 1.5707953071795862
-      name "Central 1"
-      enablePhysics FALSE
-    }
-  ]
-}
-DEF CANOS_CENTRO_ESQ Group {
-  children [
-    cano_15cm {
-      translation -0.135 0.105 2.02586e-07
-      rotation 0.577349935856137 0.577349935856137 0.5773509358560258 -2.094395307179586
-      name "Cental 7(1)"
-      enablePhysics FALSE
-    }
-    joelho {
-      translation -0.245 0.105 0.01
-      rotation -3.3905013482585576e-09 0.7071062811861719 0.7071072811865696 3.14159
-      name "Joelho 1(1)"
-      enablePhysics FALSE
-    }
-    cano_20cm {
-      translation -0.255 0.095 0.14
-      name "Cental 6(1)"
-      enablePhysics FALSE
-    }
-    cano_20cm {
-      translation -0.255 0.095 0.34
-      name "Cental 5(1)"
-      enablePhysics FALSE
-    }
-    cano_20cm {
-      translation -0.255 0.095 0.54
-      name "Cental 4(1)"
-      enablePhysics FALSE
-    }
-    cano_20cm {
-      translation -0.255 0.095 0.91
-      name "Cental 3(1)"
-      enablePhysics FALSE
-    }
-    cano_15cm {
-      translation -0.255 0.1 1.08
-      name "Central 2(1)"
-      enablePhysics FALSE
-    }
-    cano_10cm {
-      translation -0.255 0.1 1.205
-      rotation -0.9999999999999999 0 0 1.5707953071795862
-      name "Central 1(1)"
-      enablePhysics FALSE
-    }
-  ]
-}
-Pioneer3dx {
-  translation -1.55 0.1975 1.02981e-06
-  rotation 0 1 0 -1.5707953071795862
-}
-DEF PLACAS Group {
-  children [
-    Solid {
-      translation -1 0 2
+    DEF BASES Group {
       children [
-        Shape {
-          appearance Appearance {
-            material Material {
-            }
-            texture ImageTexture {
-              url [
-                "../textures/CBR_azul_completo.png"
-              ]
-              repeatS FALSE
-              repeatT FALSE
-            }
-            textureTransform TextureTransform {
-              center -0.4 0
-              scale 0.8 1
-            }
-          }
-          geometry Plane {
-            size 0.6 0.3
-          }
+        base_27cm {
+          translation 0.24 0.025 -0.095
+          name "Base 27cm(4)"
+        }
+        base_27cm {
+          translation -0.24 0.025 0.095
+          name "Base 27cm(1)"
+        }
+        base_32cm {
+          translation 0.24 0.025 -0.39
+        }
+        base_32cm {
+          translation -0.24 0.025 0.39
+          name "Base 32cm(2)"
+        }
+        base_32cm {
+          translation -0.24 0.025 0.71
+          name "Base 32cm(3)"
+        }
+        base_40cm {
+          translation -0.24 0.025 1.05
+          name "Base 40cm(1)"
+        }
+        base_32cm {
+          translation 0.24 0.025 -0.71
+          name "Base 32cm(1)"
+        }
+        base_40cm {
+          translation 0.24 0.025 -1.05
+          name "Base 40cm(2)"
+        }
+        base_40cm {
+          translation 0 0.025 0
+          rotation 0 1 0 -1.5707953071795862
         }
       ]
-      name "Placa 1"
     }
-    Solid {
-      translation 0 0 2
+    DEF CANOS_DIR Group {
       children [
-        Shape {
-          appearance Appearance {
-            material Material {
-            }
-            texture ImageTexture {
-              url [
-                "../textures/robotica.png"
-              ]
-              repeatS FALSE
-              repeatT FALSE
-            }
-            textureTransform TextureTransform {
-              center -0.5 -0.5
-              scale 0.9 0.5
-            }
-          }
-          geometry Plane {
-            size 0.6 0.3
-          }
+        cano_10cm {
+          translation 2.09 0.16 -0.67
+          name "Cano 6"
+        }
+        cano_10cm {
+          translation 2.09 0.16 -1
+          name "Cano 5"
+        }
+        cano_15cm {
+          translation 2.09 0.16 -0.19
+          name "Cano 4"
+        }
+        cano_15cm {
+          translation 2.09 0.16 0.18
+          name "Cano 3"
+        }
+        cano_20cm {
+          translation 2.09 0.16 0.65
+          name "Cano 2"
+        }
+        cano_20cm {
+          translation 2.09 0.16 1.01
+          name "Cano 1"
         }
       ]
-      name "Placa 2"
     }
-    Solid {
-      translation 1 0 2
+    DEF CANOS_ESQ Group {
       children [
-        Shape {
-          appearance Appearance {
-            material Material {
-            }
-            texture ImageTexture {
-              url [
-                "../textures/ieee-mb-blue.png"
-              ]
-              repeatS FALSE
-              repeatT FALSE
-            }
-            textureTransform TextureTransform {
-              center -0.5 -0.6
-              scale 0.8 0.5
-            }
-          }
-          geometry Plane {
-            size 0.6 0.3
-          }
+        cano_10cm {
+          translation -2.09 0.16 0.67
+          name "Cano 12"
+        }
+        cano_10cm {
+          translation -2.09 0.16 1
+          name "Cano 11"
+        }
+        cano_15cm {
+          translation -2.09 0.16 0.19
+          name "Cano 10"
+        }
+        cano_15cm {
+          translation -2.09 0.16 -0.18
+          name "Cano 9"
+        }
+        cano_20cm {
+          translation -2.09 0.16 -0.65
+          name "Cano 8"
+        }
+        cano_20cm {
+          translation -2.09 0.16 -1.01
+          name "Cano 7"
         }
       ]
-      name "Placa 3"
+    }
+    DEF CANOS_CENTRO_DIR Group {
+      children [
+        cano_15cm {
+          translation 0.135 0.105 2.02586e-07
+          rotation 0.577349935856137 0.577349935856137 0.5773509358560258 -2.094395307179586
+          name "Cental 7"
+          enablePhysics FALSE
+        }
+        joelho {
+          translation 0.245 0.105 -0.0075
+          name "Joelho 1"
+          enablePhysics FALSE
+        }
+        cano_20cm {
+          translation 0.255 0.095 -0.14
+          name "Cental 6"
+          enablePhysics FALSE
+        }
+        cano_20cm {
+          translation 0.255 0.095 -0.34
+          name "Cental 5"
+          enablePhysics FALSE
+        }
+        cano_20cm {
+          translation 0.255 0.0950001 -0.54
+          name "Cental 4"
+          enablePhysics FALSE
+        }
+        cano_20cm {
+          translation 0.255 0.0950001 -0.91
+          name "Cental 3"
+          enablePhysics FALSE
+        }
+        cano_15cm {
+          translation 0.255 0.100001 -1.08
+          name "Central 2"
+          enablePhysics FALSE
+        }
+        cano_10cm {
+          translation 0.255 0.1 -1.205
+          rotation -0.9999999999999999 0 0 1.5707953071795862
+          name "Central 1"
+          enablePhysics FALSE
+        }
+      ]
+    }
+    DEF CANOS_CENTRO_ESQ Group {
+      children [
+        cano_15cm {
+          translation -0.135 0.105 2.02586e-07
+          rotation 0.577349935856137 0.577349935856137 0.5773509358560258 -2.094395307179586
+          name "Cental 7(1)"
+          enablePhysics FALSE
+        }
+        joelho {
+          translation -0.245 0.105 0.01
+          rotation -3.3905013482585576e-09 0.7071062811861719 0.7071072811865696 3.14159
+          name "Joelho 1(1)"
+          enablePhysics FALSE
+        }
+        cano_20cm {
+          translation -0.255 0.095 0.14
+          name "Cental 6(1)"
+          enablePhysics FALSE
+        }
+        cano_20cm {
+          translation -0.255 0.095 0.34
+          name "Cental 5(1)"
+          enablePhysics FALSE
+        }
+        cano_20cm {
+          translation -0.255 0.095 0.54
+          name "Cental 4(1)"
+          enablePhysics FALSE
+        }
+        cano_20cm {
+          translation -0.255 0.095 0.91
+          name "Cental 3(1)"
+          enablePhysics FALSE
+        }
+        cano_15cm {
+          translation -0.255 0.1 1.08
+          name "Central 2(1)"
+          enablePhysics FALSE
+        }
+        cano_10cm {
+          translation -0.255 0.1 1.205
+          rotation -0.9999999999999999 0 0 1.5707953071795862
+          name "Central 1(1)"
+          enablePhysics FALSE
+        }
+      ]
+    }
+    DEF PLACAS Group {
+      children [
+        Solid {
+          translation -1 0 2
+          children [
+            Shape {
+              appearance Appearance {
+                material Material {
+                }
+                texture ImageTexture {
+                  url [
+                    "../textures/CBR_azul_completo.png"
+                  ]
+                  repeatS FALSE
+                  repeatT FALSE
+                }
+                textureTransform TextureTransform {
+                  center -0.4 0
+                  scale 0.8 1
+                }
+              }
+              geometry Plane {
+                size 0.6 0.3
+              }
+            }
+          ]
+          name "Placa 1"
+        }
+        Solid {
+          translation 0 0 2
+          children [
+            Shape {
+              appearance Appearance {
+                material Material {
+                }
+                texture ImageTexture {
+                  url [
+                    "../textures/robotica.png"
+                  ]
+                  repeatS FALSE
+                  repeatT FALSE
+                }
+                textureTransform TextureTransform {
+                  center -0.5 -0.5
+                  scale 0.9 0.5
+                }
+              }
+              geometry Plane {
+                size 0.6 0.3
+              }
+            }
+          ]
+          name "Placa 2"
+        }
+        Solid {
+          translation 1 0 2
+          children [
+            Shape {
+              appearance Appearance {
+                material Material {
+                }
+                texture ImageTexture {
+                  url [
+                    "../textures/ieee-mb-blue.png"
+                  ]
+                  repeatS FALSE
+                  repeatT FALSE
+                }
+                textureTransform TextureTransform {
+                  center -0.5 -0.6
+                  scale 0.8 0.5
+                }
+              }
+              geometry Plane {
+                size 0.6 0.3
+              }
+            }
+          ]
+          name "Placa 3"
+        }
+      ]
     }
   ]
 }
