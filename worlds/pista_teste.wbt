@@ -1,0 +1,272 @@
+#VRML_SIM R2021b utf8
+WorldInfo {
+  coordinateSystem "NUE"
+  contactProperties [
+    ContactProperties {
+      softCFM 0.0005
+    }
+  ]
+}
+Viewpoint {
+  orientation 0.8736662143044701 0.4543666730338173 0.1739490512163716 5.457193570774226
+  position -2.21954011855998 3.498954382769112 3.8324095561027782
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+DEF Arena Group {
+  children [
+    arena_sek_2021 {
+      texture [
+        "..//textures//arena_02.png"
+      ]
+    }
+    DEF BASES Group {
+      children [
+        base_27cm {
+          translation 0 0.025 -1.105
+          name "Base 9"
+        }
+        base_27cm {
+          translation 0 0.025 -0.835
+          name "Base 8"
+        }
+        base_27cm {
+          translation 0 0.025 -0.565
+          name "Base 7"
+        }
+        base_27cm {
+          translation 0 0.025 -0.295
+          name "Base 6"
+        }
+        base_32cm {
+          translation 0 0.025 0
+          name "Base 5"
+        }
+        base_27cm {
+          translation 0 0.025 0.295
+          name "Base 4"
+        }
+        base_27cm {
+          translation 0 0.025 0.565
+          name "Base 3"
+        }
+        base_27cm {
+          translation 0 0.025 0.835
+          name "Base 2"
+        }
+        base_27cm {
+          translation 0 0.025 1.105
+          name "Base 1"
+        }
+      ]
+    }
+    DEF CANOS_DIR Group {
+      children [
+        cano_10cm {
+          translation 2.09 0.16 0.19
+          name "Cano 6"
+        }
+        cano_10cm {
+          translation 2.09 0.16 -0.19
+          name "Cano 5"
+        }
+        cano_15cm {
+          translation 2.09 0.16 -0.62
+          name "Cano 4"
+        }
+        cano_15cm {
+          translation 2.09 0.16 -1.01
+          name "Cano 3"
+        }
+        cano_20cm {
+          translation 2.09 0.16 0.65
+          name "Cano 2"
+        }
+        cano_20cm {
+          translation 2.09 0.16 1.01
+          name "Cano 1"
+        }
+      ]
+    }
+    DEF CANOS_ESQ Group {
+      children [
+        cano_10cm {
+          translation -2.09 0.16 -0.18
+          name "Cano 12"
+        }
+        cano_10cm {
+          translation -2.09 0.16 0.2
+          name "Cano 11"
+        }
+        cano_15cm {
+          translation -2.09 0.16 1.01
+          name "Cano 10"
+        }
+        cano_15cm {
+          translation -2.09 0.16 0.62
+          name "Cano 9"
+        }
+        cano_20cm {
+          translation -2.09 0.16 -0.65
+          name "Cano 8"
+        }
+        cano_20cm {
+          translation -2.09 0.16 -1.01
+          name "Cano 7"
+        }
+      ]
+    }
+    DEF CANOS_CENTRO Group {
+      children [
+        cano_15cm {
+          translation 0 0.105 0.19
+          name "Cano 17"
+          enablePhysics FALSE
+        }
+        cano_15cm {
+          translation 0 0.105 0.34
+          name "Cano 16"
+          enablePhysics FALSE
+        }
+        cano_20cm {
+          translation 0 0.0975001 0.515
+          name "Cano 15"
+          enablePhysics FALSE
+        }
+        cano_20cm {
+          translation 0 0.0975 0.915
+          name "Cano 14"
+          enablePhysics FALSE
+        }
+        cano_20cm {
+          translation 0 0.0975 1.115
+          name "Cano 13"
+          enablePhysics FALSE
+        }
+        cano_20cm {
+          translation 0 0.0975 0.715
+          name "Cano 13(1)"
+          enablePhysics FALSE
+        }
+      ]
+    }
+    DEF CANOS_CENTRO Group {
+      children [
+        cano_15cm {
+          translation 0 0.105 -0.18
+          name "Cano 22"
+          enablePhysics FALSE
+        }
+        cano_15cm {
+          translation 0 0.105 -0.33
+          name "Cano 21"
+          enablePhysics FALSE
+        }
+        cano_20cm {
+          translation 0 0.0975001 -0.505
+          name "Cano 20"
+          enablePhysics FALSE
+        }
+        cano_20cm {
+          translation 0 0.0975001 -0.705
+          name "Cano 20(1)"
+          enablePhysics FALSE
+        }
+        cano_20cm {
+          translation 0 0.0975 -0.905
+          name "Cano 19"
+          enablePhysics FALSE
+        }
+        cano_20cm {
+          translation 0 0.0975 -1.1
+          name "Cano 18"
+          enablePhysics FALSE
+        }
+      ]
+    }
+    DEF PLACAS Group {
+      children [
+        Solid {
+          translation -1 0 2
+          children [
+            Shape {
+              appearance Appearance {
+                material Material {
+                }
+                texture ImageTexture {
+                  url [
+                    "../textures/CBR_azul_completo.png"
+                  ]
+                  repeatS FALSE
+                  repeatT FALSE
+                }
+                textureTransform TextureTransform {
+                  center -0.4 0
+                  scale 0.8 1
+                }
+              }
+              geometry Plane {
+                size 0.6 0.3
+              }
+            }
+          ]
+          name "Placa 1"
+        }
+        Solid {
+          translation 0 0 2
+          children [
+            Shape {
+              appearance Appearance {
+                material Material {
+                }
+                texture ImageTexture {
+                  url [
+                    "../textures/robotica.png"
+                  ]
+                  repeatS FALSE
+                  repeatT FALSE
+                }
+                textureTransform TextureTransform {
+                  center -0.5 -0.5
+                  scale 0.9 0.5
+                }
+              }
+              geometry Plane {
+                size 0.6 0.3
+              }
+            }
+          ]
+          name "Placa 2"
+        }
+        Solid {
+          translation 1 0 2
+          children [
+            Shape {
+              appearance Appearance {
+                material Material {
+                }
+                texture ImageTexture {
+                  url [
+                    "../textures/ieee-mb-blue.png"
+                  ]
+                  repeatS FALSE
+                  repeatT FALSE
+                }
+                textureTransform TextureTransform {
+                  center -0.5 -0.6
+                  scale 0.8 0.5
+                }
+              }
+              geometry Plane {
+                size 0.6 0.3
+              }
+            }
+          ]
+          name "Placa 3"
+        }
+      ]
+    }
+  ]
+}
