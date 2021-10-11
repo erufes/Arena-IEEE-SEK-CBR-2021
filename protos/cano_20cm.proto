@@ -4,7 +4,7 @@ PROTO cano_20cm [
   field SFVec3f    translation  0 0 0
   field SFRotation rotation     1 0 0 -1.5707953071795862
   field SFString   name         "Cano 20cm"
-  field SFBool     enablePhysics TRUE
+  field SFNode     physics      Physics {}
 ]
 
 {
@@ -37,10 +37,6 @@ PROTO cano_20cm [
     ]
     name IS name
     boundingObject USE SHAPE
-    %< if (fields.enablePhysics.value) { >%
-    physics Physics {
-    
-    }
-    %< } >%
+    physics IS physics
   }
 }

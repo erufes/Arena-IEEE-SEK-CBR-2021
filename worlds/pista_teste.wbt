@@ -8,8 +8,8 @@ WorldInfo {
   ]
 }
 Viewpoint {
-  orientation 0.8736662143044701 0.4543666730338173 0.1739490512163716 5.457193570774226
-  position -2.21954011855998 3.498954382769112 3.8324095561027782
+  orientation 0.8275699144526169 0.5158114241182556 0.22150984502271054 5.32585342505152
+  position -2.5346981855517448 3.9344367605695756 3.743999578920022
 }
 TexturedBackground {
 }
@@ -123,32 +123,32 @@ DEF Arena Group {
         cano_15cm {
           translation 0 0.105 0.19
           name "Cano 17"
-          enablePhysics FALSE
+          physics NULL
         }
         cano_15cm {
           translation 0 0.105 0.34
           name "Cano 16"
-          enablePhysics FALSE
+          physics NULL
         }
         cano_20cm {
           translation 0 0.0975001 0.515
           name "Cano 15"
-          enablePhysics FALSE
+          physics NULL
         }
         cano_20cm {
           translation 0 0.0975 0.915
           name "Cano 14"
-          enablePhysics FALSE
+          physics NULL
         }
         cano_20cm {
           translation 0 0.0975 1.115
           name "Cano 13"
-          enablePhysics FALSE
+          physics NULL
         }
         cano_20cm {
           translation 0 0.0975 0.715
           name "Cano 13(1)"
-          enablePhysics FALSE
+          physics NULL
         }
       ]
     }
@@ -157,32 +157,32 @@ DEF Arena Group {
         cano_15cm {
           translation 0 0.105 -0.18
           name "Cano 22"
-          enablePhysics FALSE
+          physics NULL
         }
         cano_15cm {
           translation 0 0.105 -0.33
           name "Cano 21"
-          enablePhysics FALSE
+          physics NULL
         }
         cano_20cm {
           translation 0 0.0975001 -0.505
           name "Cano 20"
-          enablePhysics FALSE
+          physics NULL
         }
         cano_20cm {
           translation 0 0.0975001 -0.705
           name "Cano 20(1)"
-          enablePhysics FALSE
+          physics NULL
         }
         cano_20cm {
           translation 0 0.0975 -0.905
           name "Cano 19"
-          enablePhysics FALSE
+          physics NULL
         }
         cano_20cm {
           translation 0 0.0975 -1.1
           name "Cano 18"
-          enablePhysics FALSE
+          physics NULL
         }
       ]
     }
