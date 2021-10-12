@@ -44,15 +44,17 @@ supervisor = Supervisor()
 timestep = int(supervisor.getBasicTimeStep())
 
 robo_1 = sim_object(supervisor.getFromDef("ROBO_1"))
+robo_2 = sim_object(supervisor.getFromDef("ROBO_2"))
 
 # Main loop:
-count = 100
 # - perform simulation steps until Webots is stopping the controller
 while supervisor.step(timestep) != -1:
-    if count == 0:
+    translation_1 = robo_1.get_translation()
+    if(translation_1[0] > 2.5 or translation_1[0] < -2.5 or translation_1[1] < 0 or translation_1[2] > 1.25 or translation_1[2] < -1.25):
         robo_1.reset_robot()
-        count = 100
-    else:
-        count = count - 1
+    
+    translation_2 = robo_2.get_translation()
+    if(translation_2[0] > 2.5 or translation_2[0] < -2.5 or translation_2[1] < 0 or translation_2[2] > 1.25 or translation_2[2] < -1.25):
+        robo_2.reset_robot()
 
 # Enter here exit cleanup code.
