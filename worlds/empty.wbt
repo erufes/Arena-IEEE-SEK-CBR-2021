@@ -24,10 +24,10 @@ base_40cm {
 cano_10cm {
   physics NULL
 }
-cano_15cm {
+cano_20cm {
   physics NULL
 }
-cano_20cm {
+cano_15cm {
   physics NULL
 }
 joelho {
