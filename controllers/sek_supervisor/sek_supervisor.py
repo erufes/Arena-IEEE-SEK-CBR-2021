@@ -3,6 +3,8 @@
 # You may need to import some classes of the controller module. Ex:
 #  from controller import Robot, Motor, DistanceSensor
 from controller import Supervisor
+from server import run_aplication_server
+import threading
 
 class sim_object():
     def __init__(self, obj_node):
@@ -46,15 +48,40 @@ timestep = int(supervisor.getBasicTimeStep())
 robo_1 = sim_object(supervisor.getFromDef("ROBO_1"))
 robo_2 = sim_object(supervisor.getFromDef("ROBO_2"))
 
+def reset (s):
+    global robo_1, robo_2
+    if s == 1:
+        robo_1.reset_robot()
+        
+    if s == 2:
+        robo_2.reset_robot()
+        
+        
+functions = {
+    "echo" : (lambda s: s),
+    "reset_robot" : (lambda s: reset(s)),
+}
+
+com_thread = threading.Thread(target=run_aplication_server, args = (functions,))
+com_thread.start()
+
+reset_timer_1 = 3
+reset_timer_2 = 3
 # Main loop:
 # - perform simulation steps until Webots is stopping the controller
 while supervisor.step(timestep) != -1:
     translation_1 = robo_1.get_translation()
     if(translation_1[0] > 2.5 or translation_1[0] < -2.5 or translation_1[1] < 0 or translation_1[2] > 1.25 or translation_1[2] < -1.25):
-        robo_1.reset_robot()
+        reset_timer_1 -= timestep / 1000.0
+        if reset_timer_1 <= 0:
+            reset_timer_1 = 3
+            robo_1.reset_robot()
     
     translation_2 = robo_2.get_translation()
     if(translation_2[0] > 2.5 or translation_2[0] < -2.5 or translation_2[1] < 0 or translation_2[2] > 1.25 or translation_2[2] < -1.25):
-        robo_2.reset_robot()
+        reset_timer_2 -= timestep / 1000.0
+        if reset_timer_2 <= 0:
+            reset_timer_2 = 3
+            robo_2.reset_robot() 
 
 # Enter here exit cleanup code.
