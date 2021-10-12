@@ -1,4 +1,4 @@
-#VRML_SIM R2021b utf8
+#VRML_SIM R2021a utf8
 WorldInfo {
   coordinateSystem "NUE"
   contactProperties [
@@ -22,14 +22,14 @@ base_32cm {
 base_40cm {
 }
 cano_10cm {
-  enablePhysics FALSE
+  physics NULL
 }
 cano_15cm {
-  enablePhysics FALSE
+  physics NULL
 }
 cano_20cm {
-  enablePhysics FALSE
+  physics NULL
 }
 joelho {
-  enablePhysics FALSE
+  physics NULL
 }

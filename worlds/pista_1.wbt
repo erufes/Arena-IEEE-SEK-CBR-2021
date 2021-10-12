@@ -1,4 +1,4 @@
-#VRML_SIM R2021b utf8
+#VRML_SIM R2021a utf8
 WorldInfo {
   coordinateSystem "NUE"
   contactProperties [
@@ -120,27 +120,27 @@ DEF Arena Group {
         cano_15cm {
           translation 0 0.105 0.16
           name "Cano 17"
-          enablePhysics FALSE
+          physics NULL
         }
         cano_15cm {
           translation 0 0.105 0.31
           name "Cano 16"
-          enablePhysics FALSE
+          physics NULL
         }
         cano_20cm {
           translation 0 0.0975001 0.485
           name "Cano 15"
-          enablePhysics FALSE
+          physics NULL
         }
         cano_20cm {
           translation 0 0.0975 0.905
           name "Cano 14"
-          enablePhysics FALSE
+          physics NULL
         }
         cano_20cm {
           translation 0 0.0975 1.105
           name "Cano 13"
-          enablePhysics FALSE
+          physics NULL
         }
       ]
     }
@@ -149,27 +149,27 @@ DEF Arena Group {
         cano_15cm {
           translation 0 0.105 -0.16
           name "Cano 22"
-          enablePhysics FALSE
+          physics NULL
         }
         cano_15cm {
           translation 0 0.105 -0.31
           name "Cano 21"
-          enablePhysics FALSE
+          physics NULL
         }
         cano_20cm {
           translation 0 0.0975001 -0.485
           name "Cano 20"
-          enablePhysics FALSE
+          physics NULL
         }
         cano_20cm {
           translation 0 0.0975 -0.905
           name "Cano 19"
-          enablePhysics FALSE
+          physics NULL
         }
         cano_20cm {
           translation 0 0.0975 -1.11
           name "Cano 18"
-          enablePhysics FALSE
+          physics NULL
         }
       ]
     }
