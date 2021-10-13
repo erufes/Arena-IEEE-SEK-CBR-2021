@@ -8,8 +8,8 @@ WorldInfo {
   ]
 }
 Viewpoint {
-  orientation 0.7943092395420679 0.5765539189395301 0.19146386221313794 5.49119923047662
-  position -2.315227275621134 3.299312938322383 4.4028002870811775
+  orientation 0.9999216260950443 -0.012029914147777222 -0.0034673957142950696 5.721893590053403
+  position 0.07519040113811842 3.7951441924950364 6.525442728968315
 }
 TexturedBackground {
 }
@@ -18,6 +18,9 @@ TexturedBackgroundLight {
 DEF Arena Group {
   children [
     arena_sek_2021 {
+      texture [
+        "..//textures//arena_03.png"
+      ]
     }
     DEF BASES Group {
       children [
@@ -66,109 +69,99 @@ DEF Arena Group {
           name "Cano 6"
         }
         cano_10cm {
-          translation 2.09 0.16 -1
-          name "Cano 5"
+          translation 2.09 0.16 -1.01
+          name "Cano 6(1)"
         }
         cano_15cm {
-          translation 2.09 0.16 -0.19
+          translation 2.09 0.16 0.99
           name "Cano 4"
         }
         cano_15cm {
-          translation 2.09 0.16 0.18
-          name "Cano 3"
+          translation 2.09 0.16 0.7
+          name "Cano 4(1)"
         }
         cano_20cm {
-          translation 2.09 0.16 0.65
+          translation 2.09 0.16 0.15
           name "Cano 2"
         }
         cano_20cm {
-          translation 2.09 0.16 1.01
-          name "Cano 1"
+          translation 2.09 0.16 -0.21
+          name "Cano 2(1)"
         }
       ]
     }
     DEF CANOS_ESQ Group {
       children [
         cano_10cm {
-          translation -2.09 0.16 0.67
-          name "Cano 12"
-        }
-        cano_10cm {
-          translation -2.09 0.16 1
+          translation -2.09 0.16 1.01
           name "Cano 11"
         }
-        cano_15cm {
-          translation -2.09 0.16 0.19
-          name "Cano 10"
+        cano_10cm {
+          translation -2.09 0.16 0.67
+          name "Cano 11(1)"
         }
         cano_15cm {
-          translation -2.09 0.16 -0.18
+          translation -2.09 0.16 -0.7
           name "Cano 9"
         }
+        cano_15cm {
+          translation -2.09 0.16 -0.99
+          name "Cano 9(1)"
+        }
         cano_20cm {
-          translation -2.09 0.16 -0.65
+          translation -2.09 0.16 -0.15
           name "Cano 8"
         }
         cano_20cm {
-          translation -2.09 0.16 -1.01
-          name "Cano 7"
+          translation -2.09 0.16 0.21
+          name "Cano 8(1)"
         }
       ]
     }
     DEF CANOS_CENTRO Group {
       children [
-        cano_15cm {
-          translation 0 0.105 0.16
-          name "Cano 17"
-          physics NULL
-        }
-        cano_15cm {
-          translation 0 0.105 0.31
-          name "Cano 16"
+        cano_20cm {
+          translation 0 0.0975001 -0.775
+          name "Cano 20(1)"
           physics NULL
         }
         cano_20cm {
-          translation 0 0.0975001 0.485
-          name "Cano 15"
+          translation 0 0.0975001 -0.405
+          name "Cano 20(2)"
           physics NULL
         }
         cano_20cm {
-          translation 0 0.0975 0.905
-          name "Cano 14"
+          translation 0 0.0975001 -0.205
+          name "Cano 23"
           physics NULL
         }
         cano_20cm {
-          translation 0 0.0975 1.105
-          name "Cano 13"
-          physics NULL
-        }
-      ]
-    }
-    DEF CANOS_CENTRO Group {
-      children [
-        cano_15cm {
-          translation 0 0.105 -0.16
-          name "Cano 22"
-          physics NULL
-        }
-        cano_15cm {
-          translation 0 0.105 -0.31
-          name "Cano 21"
-          physics NULL
-        }
-        cano_20cm {
-          translation 0 0.0975001 -0.485
-          name "Cano 20"
-          physics NULL
-        }
-        cano_20cm {
-          translation 0 0.0975 -0.905
-          name "Cano 19"
-          physics NULL
-        }
-        cano_20cm {
-          translation 0 0.0975 -1.11
+          translation 0 0.0975 -1.1
           name "Cano 18"
+          physics NULL
+        }
+      ]
+    }
+    DEF CANOS_CENTRO Group {
+      children [
+        cano_20cm {
+          translation 0 0.0975001 0.775
+          name "Cano 20(3)"
+          physics NULL
+        }
+        cano_20cm {
+          translation 0 0.0975001 0.405
+          name "Cano 20(4)"
+          physics NULL
+        }
+        cano_20cm {
+          translation 0 0.0975001 0.205
+          name "Cano 24"
+          physics NULL
+        }
+        cano_20cm {
+          translation 0 0.0975 1.1
+          name "Cano 18(1)"
           physics NULL
         }
       ]
@@ -256,4 +249,9 @@ DEF Arena Group {
       ]
     }
   ]
+}
+Floor {
+  translation 0 -0.1 0
+  appearance Parquetry {
+  }
 }

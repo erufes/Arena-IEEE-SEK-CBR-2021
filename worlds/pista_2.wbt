@@ -8,8 +8,8 @@ WorldInfo {
   ]
 }
 Viewpoint {
-  orientation -0.9049448726504934 -0.40450878567290316 -0.13208868148715747 0.6925992626113563
-  position -1.7457277064085512 4.506622801996364 6.197267796716813
+  orientation -0.9996157548191495 -0.02632273115921892 -0.00868657249215514 0.6377287775231621
+  position -0.11337048300672566 4.235880770356362 6.2805737820671945
 }
 TexturedBackground {
 }
@@ -17,6 +17,11 @@ TexturedBackgroundLight {
 }
 DEF Arena Group {
   children [
+    Floor {
+      translation 0 -0.1 0
+      appearance Parquetry {
+      }
+    }
     arena_sek_2021 {
     }
     DEF BASES Group {
@@ -117,44 +122,43 @@ DEF Arena Group {
     DEF CANOS_CENTRO_DIR Group {
       children [
         cano_15cm {
-          translation 0.135 0.105 2.02586e-07
-          rotation 0.577349935856137 0.577349935856137 0.5773509358560258 -2.094395307179586
+          translation 0.135 0.105 0
+          rotation 1.68044e-07 -1 -8.68423e-07 1.5708
           name "Cental 7"
           physics NULL
         }
         joelho {
-          translation 0.245 0.105 -0.0075
+          translation 0.235 0.105 -0.005
           name "Joelho 1"
           physics NULL
         }
         cano_20cm {
-          translation 0.255 0.095 -0.14
+          translation 0.24 0.105 -0.13
           name "Cental 6"
           physics NULL
         }
         cano_20cm {
-          translation 0.255 0.095 -0.34
+          translation 0.24 0.105 -0.33
           name "Cental 5"
           physics NULL
         }
         cano_20cm {
-          translation 0.255 0.0950001 -0.54
+          translation 0.24 0.105 -0.53
           name "Cental 4"
           physics NULL
         }
         cano_20cm {
-          translation 0.255 0.0950001 -0.91
+          translation 0.24 0.105 -0.9
           name "Cental 3"
           physics NULL
         }
         cano_15cm {
-          translation 0.255 0.100001 -1.08
+          translation 0.24 0.105 -1.075
           name "Central 2"
           physics NULL
         }
         cano_10cm {
-          translation 0.255 0.1 -1.205
-          rotation -0.9999999999999999 0 0 1.5707953071795862
+          translation 0.24 0.105 -1.2
           name "Central 1"
           physics NULL
         }
@@ -163,45 +167,44 @@ DEF Arena Group {
     DEF CANOS_CENTRO_ESQ Group {
       children [
         cano_15cm {
-          translation -0.135 0.105 2.02586e-07
-          rotation 0.577349935856137 0.577349935856137 0.5773509358560258 -2.094395307179586
+          translation -0.135 0.105 0
+          rotation 1.68044e-07 -1 -8.68423e-07 1.5708
           name "Cental 7(1)"
           physics NULL
         }
         joelho {
-          translation -0.245 0.105 0.01
+          translation -0.235 0.105 0.005
           rotation -3.3905013482585576e-09 0.7071062811861719 0.7071072811865696 3.14159
           name "Joelho 1(1)"
           physics NULL
         }
         cano_20cm {
-          translation -0.255 0.095 0.14
+          translation -0.24 0.105 0.13
           name "Cental 6(1)"
           physics NULL
         }
         cano_20cm {
-          translation -0.255 0.095 0.34
+          translation -0.24 0.105 0.33
           name "Cental 5(1)"
           physics NULL
         }
         cano_20cm {
-          translation -0.255 0.095 0.54
+          translation -0.24 0.105 0.53
           name "Cental 4(1)"
           physics NULL
         }
         cano_20cm {
-          translation -0.255 0.095 0.91
+          translation -0.24 0.105 0.9
           name "Cental 3(1)"
           physics NULL
         }
         cano_15cm {
-          translation -0.255 0.1 1.08
+          translation -0.24 0.105 1.075
           name "Central 2(1)"
           physics NULL
         }
         cano_10cm {
-          translation -0.255 0.1 1.205
-          rotation -0.9999999999999999 0 0 1.5707953071795862
+          translation -0.24 0.105 1.2
           name "Central 1(1)"
           physics NULL
         }
