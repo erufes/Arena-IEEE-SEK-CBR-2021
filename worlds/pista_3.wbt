@@ -1,0 +1,269 @@
+#VRML_SIM R2021a utf8
+WorldInfo {
+  coordinateSystem "NUE"
+  contactProperties [
+    ContactProperties {
+      softCFM 0.0005
+    }
+  ]
+}
+Viewpoint {
+  orientation 0.999990315441913 0.004125648878300995 0.001532332769449568 5.571928985228166
+  position -0.01599226509933427 4.3406608649401255 5.786842930214954
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+DEF Arena Group {
+  children [
+    arena_sek_2021 {
+      texture [
+        "..//textures//arena_05.png"
+      ]
+    }
+    DEF BASES Group {
+      children [
+        base_27cm {
+          translation 0 0.025 -1.105
+          name "Base 9"
+        }
+        base_27cm {
+          translation 0 0.025 -0.835
+          name "Base 8"
+        }
+        base_27cm {
+          translation 0 0.025 -0.565
+          name "Base 7"
+        }
+        base_27cm {
+          translation 0 0.025 -0.295
+          name "Base 6"
+        }
+        base_32cm {
+          translation 0 0.025 0
+          name "Base 5"
+        }
+        base_27cm {
+          translation 0 0.025 0.295
+          name "Base 4"
+        }
+        base_27cm {
+          translation 0 0.025 0.565
+          name "Base 3"
+        }
+        base_27cm {
+          translation 0 0.025 0.835
+          name "Base 2"
+        }
+        base_27cm {
+          translation 0 0.025 1.105
+          name "Base 1"
+        }
+      ]
+    }
+    DEF CANOS_DIR Group {
+      children [
+        cano_10cm {
+          translation 2.06 0.16 0.83
+          name "Cano 6(1)"
+        }
+        cano_15cm {
+          translation 2.06 0.16 -0.84
+          name "Cano 4"
+        }
+        cano_15cm {
+          translation 2.06 0.16 -1.09
+          name "Cano 4(2)"
+        }
+        cano_15cm {
+          translation 2.06 0.16 -0.59
+          rotation 0 1 0 0
+          name "Cano 4(1)"
+        }
+        cano_20cm {
+          translation 2.06 0.16 0.15
+          name "Cano 2"
+        }
+        cano_20cm {
+          translation 2.06 0.16 -0.15
+          name "Cano 2(1)"
+        }
+      ]
+    }
+    DEF CANOS_ESQ Group {
+      children [
+        cano_10cm {
+          translation -2.06 0.16 -0.83
+          name "Cano 6(2)"
+        }
+        cano_15cm {
+          translation -2.06 0.16 0.84
+          name "Cano 6"
+        }
+        cano_15cm {
+          translation -2.06 0.16 1.09
+          name "Cano 5"
+        }
+        cano_15cm {
+          translation -2.06 0.16 0.59
+          rotation 0 1 0 0
+          name "Cano 4(3)"
+        }
+        cano_20cm {
+          translation -2.06 0.16 -0.15
+          name "Cano 2(2)"
+        }
+        cano_20cm {
+          translation -2.06 0.16 0.15
+          name "Cano 2(3)"
+        }
+      ]
+    }
+    DEF CANOS_CENTRO Group {
+      children [
+        cano_15cm {
+          translation 0 0.0975 -0.51
+          name "Cano 15cm(1)"
+          physics NULL
+        }
+        cano_15cm {
+          translation 0 0.0975 -0.16
+          name "Cano 15cm(2)"
+          physics NULL
+        }
+        cano_20cm {
+          translation 0 0.0975 -1.105
+          name "Cano 18"
+          physics NULL
+        }
+        cano_20cm {
+          translation 0 0.0975 -0.335
+          name "Cano 18(3)"
+          physics NULL
+        }
+        cano_20cm {
+          translation 0 0.0975 -0.905
+          name "Cano 19"
+          physics NULL
+        }
+      ]
+    }
+    DEF CANOS_CENTRO Group {
+      children [
+        cano_15cm {
+          translation 0 0.0975 0.51
+          name "Cano 15cm(3)"
+          physics NULL
+        }
+        cano_15cm {
+          translation 0 0.0975 0.16
+          name "Cano 15cm(4)"
+          physics NULL
+        }
+        cano_20cm {
+          translation 0 0.0975 1.105
+          name "Cano 18(1)"
+          physics NULL
+        }
+        cano_20cm {
+          translation 0 0.0975 0.335
+          name "Cano 18(2)"
+          physics NULL
+        }
+        cano_20cm {
+          translation 0 0.0975 0.905
+          name "Cano 18(4)"
+          physics NULL
+        }
+      ]
+    }
+    DEF PLACAS Group {
+      children [
+        Solid {
+          translation -1 0 2
+          children [
+            Shape {
+              appearance Appearance {
+                material Material {
+                }
+                texture ImageTexture {
+                  url [
+                    "../textures/CBR_azul_completo.png"
+                  ]
+                  repeatS FALSE
+                  repeatT FALSE
+                }
+                textureTransform TextureTransform {
+                  center -0.4 0
+                  scale 0.8 1
+                }
+              }
+              geometry Plane {
+                size 0.6 0.3
+              }
+            }
+          ]
+          name "Placa 1"
+        }
+        Solid {
+          translation 0 0 2
+          children [
+            Shape {
+              appearance Appearance {
+                material Material {
+                }
+                texture ImageTexture {
+                  url [
+                    "../textures/robotica.png"
+                  ]
+                  repeatS FALSE
+                  repeatT FALSE
+                }
+                textureTransform TextureTransform {
+                  center -0.5 -0.5
+                  scale 0.9 0.5
+                }
+              }
+              geometry Plane {
+                size 0.6 0.3
+              }
+            }
+          ]
+          name "Placa 2"
+        }
+        Solid {
+          translation 1 0 2
+          children [
+            Shape {
+              appearance Appearance {
+                material Material {
+                }
+                texture ImageTexture {
+                  url [
+                    "../textures/ieee-mb-blue.png"
+                  ]
+                  repeatS FALSE
+                  repeatT FALSE
+                }
+                textureTransform TextureTransform {
+                  center -0.5 -0.6
+                  scale 0.8 0.5
+                }
+              }
+              geometry Plane {
+                size 0.6 0.3
+              }
+            }
+          ]
+          name "Placa 3"
+        }
+      ]
+    }
+  ]
+}
+Floor {
+  translation 0 -0.1 0
+  appearance Parquetry {
+  }
+}
