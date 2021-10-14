@@ -8,8 +8,8 @@ WorldInfo {
   ]
 }
 Viewpoint {
-  orientation -0.9996157548191495 -0.02632273115921892 -0.00868657249215514 0.6377287775231621
-  position -0.11337048300672566 4.235880770356362 6.2805737820671945
+  orientation -0.9991984326659809 -0.037621289296002385 -0.013679574172972232 0.6980152143027527
+  position -0.14560069468067305 4.186839111579738 5.764984862706832
 }
 TexturedBackground {
 }
@@ -122,43 +122,43 @@ DEF Arena Group {
     DEF CANOS_CENTRO_DIR Group {
       children [
         cano_15cm {
-          translation 0.135 0.105 0
+          translation 0.135 0.0975 0
           rotation 1.68044e-07 -1 -8.68423e-07 1.5708
           name "Cental 7"
           physics NULL
         }
         joelho {
-          translation 0.235 0.105 -0.005
+          translation 0.235 0.0975 -0.005
           name "Joelho 1"
           physics NULL
         }
         cano_20cm {
-          translation 0.24 0.105 -0.13
+          translation 0.24 0.0975 -0.13
           name "Cental 6"
           physics NULL
         }
         cano_20cm {
-          translation 0.24 0.105 -0.33
+          translation 0.24 0.0975 -0.33
           name "Cental 5"
           physics NULL
         }
         cano_20cm {
-          translation 0.24 0.105 -0.53
+          translation 0.24 0.0975 -0.53
           name "Cental 4"
           physics NULL
         }
         cano_20cm {
-          translation 0.24 0.105 -0.9
+          translation 0.24 0.0975 -0.9
           name "Cental 3"
           physics NULL
         }
         cano_15cm {
-          translation 0.24 0.105 -1.075
+          translation 0.24 0.0975 -1.075
           name "Central 2"
           physics NULL
         }
         cano_10cm {
-          translation 0.24 0.105 -1.2
+          translation 0.24 0.0975 -1.2
           name "Central 1"
           physics NULL
         }
@@ -167,44 +167,44 @@ DEF Arena Group {
     DEF CANOS_CENTRO_ESQ Group {
       children [
         cano_15cm {
-          translation -0.135 0.105 0
+          translation -0.135 0.0975 0
           rotation 1.68044e-07 -1 -8.68423e-07 1.5708
           name "Cental 7(1)"
           physics NULL
         }
         joelho {
-          translation -0.235 0.105 0.005
+          translation -0.235 0.0975 0.005
           rotation -3.3905013482585576e-09 0.7071062811861719 0.7071072811865696 3.14159
           name "Joelho 1(1)"
           physics NULL
         }
         cano_20cm {
-          translation -0.24 0.105 0.13
+          translation -0.24 0.0975 0.13
           name "Cental 6(1)"
           physics NULL
         }
         cano_20cm {
-          translation -0.24 0.105 0.33
+          translation -0.24 0.0975 0.33
           name "Cental 5(1)"
           physics NULL
         }
         cano_20cm {
-          translation -0.24 0.105 0.53
+          translation -0.24 0.0975 0.53
           name "Cental 4(1)"
           physics NULL
         }
         cano_20cm {
-          translation -0.24 0.105 0.9
+          translation -0.24 0.0975 0.9
           name "Cental 3(1)"
           physics NULL
         }
         cano_15cm {
-          translation -0.24 0.105 1.075
+          translation -0.24 0.0975 1.075
           name "Central 2(1)"
           physics NULL
         }
         cano_10cm {
-          translation -0.24 0.105 1.2
+          translation -0.24 0.0975 1.2
           name "Central 1(1)"
           physics NULL
         }
